@@ -1,0 +1,42 @@
+
+<!DOCTYPE html>
+
+<html>
+   <head> 
+      <title>Move Pic</title>
+
+
+      <script type = "text/javascript">
+
+
+
+	function add() 
+		{
+
+			var pic = document.getElementById("pic");
+
+			var tag = document.createElement('img');
+			tag.setAttribute('src', 'smile.jpg');
+			 
+
+			document.body.insertBefore(tag,pic);
+
+		}  
+	
+ 
+      </script>
+   </head>
+   <body>
+
+
+      <p> Move Pic</p> 
+
+	<img id="pic" src="smile.jpg"      />
+
+<button onclick="add()"> add </button>
+
+
+ 
+
+   </body>
+</html>
