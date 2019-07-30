@@ -1,0 +1,45 @@
+Assignment 1
+Assignment 1 (due: 29th of January 2018) 
+
+ 
+
+Goal: Client-Server communication
+
+ 
+
+There are two parts (A & B) in this assignment. You can implement the assignment in Java, C, C++, C#,  or Go. Do not use any HTTP libraries and limit yourself to the TCP and standard IO libraries.
+
+
+
+
+Part A (50%) Crawler
+
+ 
+
+Write a program called crawler that accepts two command line arguments. The first argument is a URL and the second a number.
+
+If the number is zero or smaller, the crawler will fetch the HTML page associated with the URL and print each URL found in the web page.
+
+If the number is 1 or higher, the crawler will fetch the HTML page associated with the URL and call execute crawler (number - 1) for each URL found in the web page.
+
+
+
+
+Part B (50 %) Server
+
+Write a program called server that accepts one command line argument. The argument specifies the absolute path to a directory which contains one or more HTML web-pages.
+
+If a HTTP client connects to your server and requests a web-page, your server will search the provided directory for the requested web-page. If the pages can be found send it together with the appropriate response to the client. If the page cannot be found send the appropriate response to the client.
+
+
+
+
+Marking:
+
+ 
+
+Please present your assignment at the tutorials for marking to the TA. You can also present the assignments to the class instructor.
+
+ 
+
+Last modified: Wednesday, 14 February 2018, 11:43 AM
