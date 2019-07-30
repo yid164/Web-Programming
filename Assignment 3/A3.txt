@@ -1,0 +1,48 @@
+Assignment 3
+Assignment 3 (due: 21st of March 2018)
+
+Goal: Persistent Storage & Web Services
+
+ 
+
+Your task is to develop a client-server solution using web services (SOAP and REST) that allows people to retrieve posted messages and to post new messages. To ensure reliable storage of messages a database (e.g. MySQL) must be used.
+
+This assignment consists of client and server components.
+
+a)     For the server side, you must develop SOAP and REST web services in the language Java using Glassfish or Tomcat.
+
+ 
+
+SOAP:
+Develop a SOAP web service for retrieving posted messages from the database and develop a SOAP web service for storing messages in the database.
+
+REST:
+Develop a REST web service for retrieving posted messages from the database and develop a REST web service for storing messages in the database.
+
+ 
+
+b)     For the client side, you must develop in Java 2 standalone applications.  
+
+SOAP:
+Develop a standalone application that connects to the SOAP web services and allows a user to add new posts and to retrieve existing posts.
+
+REST:
+Develop a standalone application that connects to the REST web services and allows a user to add new posts and to retrieve existing posts.
+
+ 
+
+To obtain additional bonus marks (up to 50%) develop a web page that allows users to add new posts and to retrieve existing posts using the web services developed in part a.
+
+a)     (20% bonus) The web page connects to the REST web services developed in part a.
+
+b)     (30% bonus) The web page connects to the SOAP web services developed in part a.
+
+ 
+
+Marking:
+
+Please present your assignment at the tutorials for marking to the TA. You can also present the assignments to the class instructor.
+
+ 
+
+Last modified: Wednesday, 7 March 2018, 11:44 AM
