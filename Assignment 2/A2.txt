@@ -1,0 +1,20 @@
+Assignment 2
+Assignment 2 (due: 7th of March 2018)
+
+Goal: Implement Stateful Servers with Servlets
+
+ 
+
+Your task is to develop a web-based system that will allow people to retrieve posted messages and to post new messages. To retrieve all posted messages, the user would visit the URN “ALLMESSAGES” or “ALLMESSAGES.html”.
+
+To post a new message the user would visit the URN “NEWMESSAGES” or “NEWMESSAGES.html” where the user could enter the text and submit a message.
+
+Please make sure that you use servlets. You are free to choose any servlet container but Tomcat and Glassfish may be the best solutions.  
+
+ 
+
+Marking:
+
+Please present your assignment at the tutorials for marking to the TA. You can also present the assignments to the class instructor.
+
+Last modified: Wednesday, 14 February 2018, 11:46 AM
