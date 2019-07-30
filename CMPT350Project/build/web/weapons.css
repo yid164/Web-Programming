@@ -1,0 +1,178 @@
+@charset "utf-8";
+
+*{
+    margin: 0;
+    color: #263740;
+    font-family: "futura-pt";
+}
+
+#header {
+    background-color:black;
+    color:white;
+    text-align:center;
+    padding:1px;
+}
+
+background {
+    display: block;
+    background-image: url("PUBGimg/pubg.jpg");
+    background-size: cover;
+    background-position: center 0px;
+    z-index: -100;
+    width:inherit;
+    height:inherit;
+}
+
+body {
+    position:relative;
+    display: block;
+    background-image: url("PUBGimg/pubg.jpg");
+    background-size: cover;
+    background-position: center 0px;
+    z-index: -100;
+    width:inherit;
+    height:inherit;
+}
+#first {
+    height: 80vh;
+}
+
+section {
+    height:100vh;
+    display:flex;
+    background-color: rgba(0, 0, 0, 0.336);
+    justify-content:center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 18px;
+}
+
+#row{
+    width:100%;
+    height:35%;
+    display:flex;
+    background-color: rgba(0, 0, 0, 0.589);
+    justify-content:center;
+    align-items: center;
+    flex-direction: row;
+}
+
+
+#weapon-sniper {
+    width:100%;
+    height: 35%;
+    background-image: url("PUBGimg/Kar98k.png") !important;
+    background-size: contain;
+    background-repeat: no-repeat;
+    color:white;
+    text-align: center;
+    
+}
+
+#weapon-assault {
+    width:100%;
+    height: 35%;
+    background-image: url("PUBGimg/AKM.png") !important;
+    background-size: contain;
+    background-repeat: no-repeat;
+    color:white;
+    text-align: center;
+}
+
+#weapon-submachine {
+
+    width:100%;
+    height: 35%;
+    background-image: url("PUBGimg/Vector.png") !important;
+    background-size: contain;
+    background-repeat: no-repeat;
+    color:white;
+    text-align: center;
+}
+
+#weapon-shotgun {
+    width:100%;
+    height: 35%;
+    background-image: url("PUBGimg/S686.png") !important;
+    background-size: contain;
+    background-repeat: no-repeat;
+    color:white;
+    text-align: center;
+}
+
+#weapon-pistols {
+    width:100%;
+    height: 35%;
+    background-image: url("PUBGimg/P18C.png") !important;
+    background-size: contain;
+    background-repeat: no-repeat;
+    color:white;
+    text-align: center;
+}
+
+#weapon-miscellaneous {
+    width:100%;
+    height: 35%;
+    background-image: url("PUBGimg/CROSSBOW.png") !important;
+    background-size: contain;
+    background-repeat: no-repeat;
+    color:white;
+    text-align: center;
+    
+}
+
+#weapon-melee {
+    width:100%;
+    height: 35%;
+    background-image: url("PUBGimg/PAN.png") !important;
+    background-size: contain;
+    background-repeat: no-repeat;
+    color:white;
+    text-align: center;
+}
+
+#weapon-throwable {
+    width:100%;
+    height: 35%;
+    background-image: url("PUBGimg/FRAGGRENADE.png") !important;
+    background-size: contain;
+    background-repeat: no-repeat;
+    color:white;
+    text-align: center;
+}
+
+
+
+#section {
+    width:350px;
+    float:left;
+    padding:10px; 
+}
+
+
+table, th, tr, td{
+    border:0px solid;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.438);
+    color:white;
+    
+}
+
+table.center {
+    margin-left:auto; 
+    margin-right:auto;
+}
+
+
+
+
+#footer {
+    background-color:black;
+    color:white;
+    clear:both;
+    text-align:center;
+    padding:5px; 
+}
+
+
+

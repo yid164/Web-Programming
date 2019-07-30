@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="navicss.css" type="text/css" media="screen"/>
+        <script src="naviscript.js"></script>
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+.container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+</style>
+</head>
+
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav('mySidenav');"> &times;</a>
+            <a href="index.html"><img id = "pubg"src="https://png.icons8.com/color/180/pubg.png"></a>
+            <a href="news.html">NEWS</a>
+            <a href="video.html">VIDEO</a>
+            <a href="Map.html">MAPS</a>
+            <a href="weapons.html">WEAPONS</a>
+            <a href="contactpubg.html">PUBG</a>
+            <a href="contectus.html">CONTACT</a>
+        </div>
+        <span style="font-size:30px;cursor:pointer" onclick="openNav('mySidenav');">&#9776;</span>
+<body>
+
+<h3>Contact Us</h3>
+
+
+
+<div class="container">
+    
+    <form action="rest/PubgService/UserSendFeedback" method="post" target="nm_iframe">
+    <label for="name">Name</label>
+    <input type="text" id="name" name="username" placeholder="Your name.." data-clear-btn="true">
+
+
+    <label for="lname">Your Email</label>
+    <input type="text" id="email" name="userEmailAddress" placeholder="Your Email.." data-clear-btn="true">
+
+    <label for="subject">Feedback</label>
+    <textarea id="feedback" name="userFeedback" placeholder="Write something.." data-clear-btn="true" style="height:200px"></textarea>
+
+    <input type="submit" name = "submit" onclick="sendFeedback();" value="Send">
+    </form>
+    <iframe id="id_iframe" name="nm_iframe" style="display:none;"></iframe>  
+</div>
+
+<script>
+    function sendFeedback(){
+        alert("Your feedback has been sent to our team! Thanks for your helping :)");
+    }   
+</script>
+
+
+</body>
+</html>

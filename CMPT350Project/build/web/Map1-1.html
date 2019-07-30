@@ -1,0 +1,54 @@
+<!doctype html>
+<html>
+<head>
+<title>Map - Erangel</title>
+<link rel="stylesheet" href = "Map1.css">
+<script src="map1scripts.js"></script>
+<script src="showmap.js"></script>
+<style>
+a {
+	color: white;
+}
+
+</style>
+</head>
+
+<body onkeydown="keyDown(event.keyCode)">
+	<div id="sidebar">
+		<div id = "sidebar-wrap">
+			<a href="Map.html">
+				<div id = "logo" ></div>
+			</a>
+			<h1>ERANGEL</h1>
+			<div class="separator"></div>
+			<ul class="key" id="map-key">
+			<a href="map1.html">
+				<li >
+					<span> Garages </span>
+					<aside> Garages with possible vehicle </aside>
+				</li>
+				<li >
+					<span> Vehicle </span>
+					<aside> Possible vehicle location </aside>
+				</li>
+				<li >
+					<span> Boats </span>
+					<aside> Possible boat location </aside>
+				</li>
+				<li >
+					<span> Loot Heatmap </span>
+					<aside> Loot locations heatmap </aside>
+				</li>
+			</ul>
+			</a>
+			
+		</div>
+	</div>
+	
+			<script>
+			showImage('mapImg/map1-vehicle.jpg');
+			</script>
+	
+</body>	
+</html>
+
