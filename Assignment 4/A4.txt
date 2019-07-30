@@ -1,0 +1,67 @@
+Assignment 4
+Assignment 4 (due: 6th of April 2018)
+
+ 
+
+Goal: Designing for Mobile
+
+ 
+
+Your task is to develop a client-server solution using jquery mobile that allows people to at allows people to retrieve posted messages and to post new messages.  
+
+ 
+
+This assignment consists of client and server components.
+
+ 
+
+a) For the server side, you must develop REST web services in the language Java using Glassfish or Tomcat.
+
+ 
+
+a1) Develop a REST web service that allows posting messages. To post a message a user must provide an ID and a message text.
+
+ 
+
+a2) Develop a REST web service that allows retrieving the IDs of all posted messages. Make sure that no ID is duplicated in the response.
+
+ 
+
+a3) Develop a REST web service that allows retrieving messages. This web service must allow a user to specify if all or only selected messages should be retrieved. Each message should be shown with the associated ID.  A user must be able to select:
+
+All messages
+
+Only messages that have arrived since the last retrieval request of this user.
+
+All messages that have posted by a list IDs
+
+All messages that have not been posted by a list of IDs
+
+ 
+
+b) For the client side, you must develop using jquery mobile a client that allows a user:
+
+ 
+
+To post a message (with ID)
+
+To retrieve all messages
+
+Only messages that have arrived since the last retrieval request of this user.
+
+All messages that have posted by a list IDs
+
+All messages that have not been posted by a list of IDs
+
+
+
+
+To obtain additional bonus marks (up to 50%) add
+
+ 
+
+a) (20% bonus) SSE in server and client - these events should notify the client if new messages are available
+
+b) (30% bonus) web sockets in server and client - use the web sockets as a way to allow chats between clients (via the server).
+
+Last modified: Friday, 23 March 2018, 11:05 AM

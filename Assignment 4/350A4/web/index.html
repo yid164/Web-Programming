@@ -1,0 +1,78 @@
+<!DOCTYPE html> 
+<html>
+<head>
+    <!-- Include meta tag to ensure proper rendering and touch zooming -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Include jQuery Mobile stylesheets -->
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+    <!-- Include the jQuery library -->
+    <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <!-- Include the jQuery Mobile library -->
+    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+</head>
+<body> 
+    <div id="home" data-role="page">
+	<div data-role="header"> <h1>Home</h1> </div> 
+            <div data-role="navbar">
+                <ul>
+                    <li><a href="#" class="ui-btn-active ui-state-persist" data-icon="home">Home</a></li>
+                    <li><a href="#addMessage" data-icon="bullets" data-transition="flow">Add Message</a></li>
+                    <li><a href="http://localhost:8080/350A4/MessageAll" data-icon="bullets" data-transition="flow">All Messages</a></li>
+                    <li><a href="http://localhost:8080/350A4/MessageSinceLastRetrieve" data-icon="bullets" data-transition="flow">New Message Since Last Retrieve</a></li>
+                    <li><a href="#messageById" data-icon="bullets" data-transition="flow">Message By ID</a></li>               
+                </ul>
+            </div>
+            <div data-role="content"> 
+                <p> This is the A4</p> 
+            </div>
+    </div> 
+    
+    <div id="addMessage" data-role="page">
+	<div data-role="header"> 
+            <h1>Add Message</h1> 
+        </div> 
+            <div data-role="navbar">
+                <ul>
+                    <li><a href="#home" data-icon="home" data-transition="flow">Home</a></li>
+                    <li><a href="#" class="ui-btn-active ui-state-persist" data-icon="bullets">Add Message</a></li>
+                    <li><a href="http://localhost:8080/350A4/MessageAll" data-icon="bullets" data-transition="flow">All messages</a></li>
+                    <li><a href="http://localhost:8080/350A4/MessageSinceLastRetrieve" data-icon="bullets" data-transition="flow">New Message Since Last Retrieve</a></li>
+                    <li><a href="#messageById" data-icon="bullets" data-transition="flow">Message By ID</a></li>                  
+                </ul>
+        </div>
+	<div data-role="content"> 
+            <form action="rest/NEWMESSAGE/add" method="post" target="nm_iframe">
+                Message : <input type="text" name="Message" data-clear-btn="true"/>
+                ID : <input type="text" name="ID" data-clear-btn="true"/>    
+                <input type="submit" value="OK" data-inline="true" />   
+            </form>
+            <iframe id="id_iframe" name="nm_iframe" style="display:none;"></iframe>    
+        </div>
+    </div> 
+    
+    <div id="messageById" data-role="page">
+	<div data-role="header"> 
+            <h1>Message By ID</h1> 
+        </div> 
+            <div data-role="navbar">
+                <ul>
+                    <li><a href="#home" data-icon="home" data-transition="flow">Home</a></li>
+                    <li><a href="#addMessage" data-icon="bullets">Add Message</a></li>
+                    <li><a href="http://localhost:8080/350A4/MessageAll" data-icon="bullets" data-transition="flow">All messages</a></li>
+                    <li><a href="http://localhost:8080/350A4/MessageSinceLastRetrieve" data-icon="bullets" data-transition="flow">New Message Since Last Retrieve</a></li>
+                    <li><a href="#" class="ui-btn-active ui-state-persist" data-icon="bullets" data-transition="flow">Message By ID</a></li>                  
+                </ul>
+        </div>
+	<div data-role="content"> 
+            <form action="http://localhost:8080/350A4/MessageByID" method="post" data-transition="flow">
+                Lists included : <input type="text" name="Message" data-clear-btn="true"/>  
+                <input type="submit" value="OK" data-inline="true" />   
+            </form>
+            <form action="http://localhost:8080/350A4/MessageByNoID" method="post" data-transition="flow">
+                Lists excluded : <input type="text" name="Message" data-clear-btn="true"/>  
+                <input type="submit" value="OK" data-inline="true" />   
+            </form>   
+        </div> 	
+    </div>
+   </body>
+</html>
